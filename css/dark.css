@@ -1,0 +1,104 @@
+.darkMode{
+    display: none;
+}
+
+body.dark .sunMode{
+    display: none;
+}
+
+body.dark .darkMode{
+    display: inline;
+}
+
+body.dark {
+    background: linear-gradient(222.26deg, rgba(255, 215, 138, 0.2) 0%, rgba(34, 34, 34, 0) 18.14%), linear-gradient(180deg, rgba(105, 105, 105, 0) 13.37%, #080A0E 26.87%), linear-gradient(40.71deg, #1B1464 50.16%, #9BD5ED 142.82%);
+}
+
+body.dark .articleLeft h2 {
+    background: linear-gradient(270deg, #9BB3F2 15.33%, #F0A5A4 101.88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size:400% 400%;
+}
+
+body.dark .articleLeft h1{
+    color: #FFFFFF;
+}
+
+body.dark .button{
+    background: linear-gradient(270.97deg, #8AC7FF 1.08%, #8C79FF 77.04%);
+    color: #000000;
+    box-shadow: -0.5px 0.5px 10px 2.5px rgba(255, 255, 255, 0.25);
+}
+
+body.dark .title h2, body.dark .social h2 {
+    background: linear-gradient(270.97deg, #8AC7FF 1.08%, #8C79FF 77.04%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size:400% 400%;
+
+}
+
+body.dark .title p, body.dark .clients p, body.dark .social p {
+    color: #787D80;
+}
+
+body.dark .clients h2 {
+    background: linear-gradient(270.55deg, #8BBBFF 60.59%, #8C79FF 104%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size:400% 400%;
+}
+
+
+body.dark .card {
+    background: #141B22;
+}
+
+body.dark .card h3 {
+    color: #ffffff;
+}
+
+body.dark .card p {
+    color: #849096;
+}
+
+body.dark .cardClient {
+    background: #141B22;
+}
+
+body.dark .cardSocial:last-child{
+    color: #FFFFFF;
+}
+
+body.dark footer {
+    background: #373775;
+}
+
+body.dark footer h4{
+    color: #ffffff;
+}
+
+body.dark footer p, body.dark footer li {
+    color: #C2CAD1;
+}
+
+body.darkMode footer i{
+    background-color: #ffffff;
+}
+
+body.dark .cardSocial {
+    background: #141B22;
+}
+
+body.dark footer li:hover{
+    cursor: pointer;
+    color: #8BBBFF;
+}
+
+
+
+
+
+/* --- Medias Queries--- */
+
