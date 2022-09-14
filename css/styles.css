@@ -469,7 +469,7 @@ footer .rights{
 
 /* 2  */
 
-@media (max-width: 800px) and (orientation: landscape){
+@media (max-width: 1023px) and (orientation: landscape){
 
     .hidden {
         display: none;
@@ -481,6 +481,19 @@ footer .rights{
 }
 
 /* 3  */
+
+@media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
+
+    .hidden {
+        display: inline-block;
+    }
+
+    .articleLeft {
+        width: 60%;
+    }
+}
+
+/* 4  */
 
 @media (max-width: 1023px) and (orientation: portrait) {
 
