@@ -40,7 +40,7 @@ body.dark .title h2, body.dark .social h2 {
 }
 
 body.dark .title p, body.dark .clients p, body.dark .social p {
-    color: #787D80;
+    color: #ffffff;
 }
 
 body.dark .clients h2 {
@@ -60,7 +60,7 @@ body.dark .card h3 {
 }
 
 body.dark .card p {
-    color: #849096;
+    color: #ffffff;
 }
 
 body.dark .cardClient {
