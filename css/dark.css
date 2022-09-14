@@ -26,7 +26,7 @@ body.dark .articleLeft h1{
 }
 
 body.dark .button{
-    background: linear-gradient(270.97deg, #8AC7FF 1.08%, #8C79FF 77.04%);
+    background: linear-gradient(97.17deg, #EAA6AB 44.41%, #9BB4F3 108.93%, rgba(217, 217, 217, 0) 108.93%);;
     color: #000000;
     box-shadow: -0.5px 0.5px 10px 2.5px rgba(255, 255, 255, 0.25);
 }
@@ -70,6 +70,23 @@ body.dark .cardClient {
 body.dark .cardSocial:last-child{
     color: #FFFFFF;
 }
+
+body.dark .cardSocial.twitter p{
+    color: #1DA1F2;
+}
+
+body.dark .cardSocial.discord p{
+    color: #7289DA;
+}
+
+body.dark .cardSocial.telegram p{
+    color: #0088CC;
+}
+
+body.dark .cardSocial.medium p{
+    color: #ffffff;
+}
+
 
 body.dark footer {
     background: #373775;
