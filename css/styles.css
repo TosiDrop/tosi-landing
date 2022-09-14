@@ -115,8 +115,7 @@ main {
     flex-direction: column;
     align-items: center;
     width: 80%;
-    height: calc(var(--hmain)*.16);
-    margin-bottom: calc(var(--hmain)*.048);
+    height: calc(var(--hmain)*.15);
 }
 
 
@@ -135,7 +134,7 @@ main {
 .title p, .social p, .clients p {
     font-size: calc(var(--hmain)*.024);
     font-weight: 500;
-    margin-bottom: calc(var(--hmain)*.012);
+
 }
 
 .gcards {
@@ -470,7 +469,7 @@ footer .rights{
 
 /* 2  */
 
-@media (max-width: 1020px) and (orientation: landscape){
+@media (max-width: 800px) and (orientation: landscape){
 
     .hidden {
         display: none;
@@ -562,7 +561,7 @@ footer .rights{
 
     footer .foot{
         flex-direction: column;
-        padding: 0px calc(var(--hmain)*.014);
+        padding-top: calc(var(--hmain)*.014);
     }
 
 
