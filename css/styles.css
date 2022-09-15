@@ -2,14 +2,33 @@
     box-sizing: border-box;
     margin: 0;
     text-decoration: none;
+    font-family: 'Prompt', sans-serif;
 }
 
 :root{
+    font-family: 'Prompt', sans-serif;
     --hmain: 100vh;
+    --tmainXL: 4.5rem;
+    --tmainL: 4rem;
+    --tmainM: 3.5rem;
+    --tmainS: 2.25rem;
+    --pmain: 1.5rem;
+    --pmainS: 1.125rem;
+    --pbtnXL: 1.25rem;
+    --pbtn: 1.125rem;
+    --pbtnS: 1rem;
+    --titles: 2.75rem;
+    --titlesS: 1.75rem;
+    --titleCard: 1.875rem;
+    --titleCardS: 1.5rem;
+    --pcard: 1rem;
+    --pscard: 0.875rem;
+    --fooXL: 1.25rem;
+    --fooM: 1.125rem;
+    --pfoo: 1rem;
 }
 
 body{
-    font-family: 'Prompt', sans-serif;
     width: 100%;
     background: linear-gradient(222.26deg, rgba(255, 215, 138, 0.2) 0%, rgba(34, 34, 34, 0) 18.14%), linear-gradient(179.99deg, rgba(251, 252, 255, 0) 14.27%, #FFFFFF 26.88%), linear-gradient(40.71deg, #ADA5FD 50.16%, #9BD5ED 142.82%);
 }
@@ -51,14 +70,16 @@ main {
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
-    width: 60%;
+    width: 70%;
 }
 
 .articleLeft div {
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
+
 
 .articleLeft h2 {
     background: linear-gradient(270deg, #3468D3 15.33%, #5932C9 101.88%);
@@ -66,27 +87,29 @@ main {
     -webkit-text-fill-color: transparent;
     font-weight: 700;
     background-size:400% 400%;
-    font-size: calc(var(--hmain)*.07);
+    font-size: calc(var(--tmainXL));
+    line-height: calc(var(--tmainXL)*1.2);
     -webkit-animation:change 4s ease infinite;
     animation:change 4s ease infinite;
-    padding: calc(var(--hmain)*.035) 0px;
+    padding: calc(var(--tmainXL)*.3) 0px;
 }
 
 .articleLeft h1{
     font-weight: 500;
-    font-size: calc(var(--hmain)*.035);
-    margin-bottom: calc(var(--hmain)*.035);
+    font-size: calc(var(--pmain));
+    margin-bottom: calc(var(--pmain));
 }
 
 .button{
     background: linear-gradient(90deg, #3765D3,#5934CA);
-    padding: calc(var(--hmain)*.02) calc(var(--hmain)*.06);
+    padding: calc(var(--pbtnXL)*.6) calc(var(--pbtnXL)*2);
     font-weight: 500;
     color: #ffffff;
-    font-size: calc(var(--hmain)*.023);
-    border-radius: calc(var(--hmain)*.02);
+    font-size: calc(var(--pbtnXL));
+    border-radius: calc(var(--pbtnXL)*.6);
     border: none;
-    box-shadow: -0.5px 0.5px 10px 2.5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    transition: 0.25s;
 }
 
 .articleRight {
@@ -96,8 +119,8 @@ main {
 }
 
 .articleRight img {
-    width: calc(var(--hmain)*.56);
-    height: calc(var(--hmain)*.56);
+    width: calc(var(--hmain)*.58);
+    height: calc(var(--hmain)*.58);
     margin: calc(var(--hmain)*.1) 0%;
 }
 
@@ -115,7 +138,7 @@ main {
     flex-direction: column;
     align-items: center;
     width: 80%;
-    height: calc(var(--hmain)*.15);
+    padding-bottom: calc(var(--hmain)*.06);
 }
 
 
@@ -125,14 +148,14 @@ main {
     -webkit-text-fill-color: transparent;
     font-weight: 600;
     background-size:400% 400%;
-    font-size: calc(var(--hmain)*.042);
-    padding-bottom: calc(var(--hmain)*.021);
+    font-size: calc(var(--titles));
+    padding-bottom: calc(var(--titles)*.5);
     -webkit-animation:change 4s ease infinite;
     animation:change 4s ease infinite;
 }
 
 .title p, .social p, .clients p {
-    font-size: calc(var(--hmain)*.024);
+    font-size: calc(var(--pmain));
     font-weight: 500;
 
 }
@@ -144,7 +167,7 @@ main {
     align-items: center;
     gap: calc(var(--hmain)*.075);
     margin-bottom: calc(var(--hmain)*.1);
-    padding: 0% 10%;
+    padding: 0% 5%;
 }
 
 .card {
@@ -154,29 +177,29 @@ main {
     border-radius: calc(var(--hmain)*.04);
     justify-content: center;
     align-items:center;
-    width: calc(var(--hmain)*.42);
-    height: calc(var(--hmain)*.52);
-    padding: 0% calc(var(--hmain)*.024);
-    box-shadow: -1px 1px 20px 5px rgba(0, 0, 0, 0.25);
+    width: calc(var(--hmain)*.48);
+    height: calc(var(--hmain)*.62);
+    padding: 0% calc(var(--hmain)*.03);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    transition: 0.25s;
 }
 
 .card img {
-    height: calc(var(--hmain)*.28);
-    width: calc(var(--hmain)*.28);
+    height: calc(var(--hmain)*.33);
+    width: calc(var(--hmain)*.33);
 }
 
 
 .card h3 {
     font-weight: 600;
-    font-size: calc(var(--hmain)*.032);
+    font-size: calc(var(--titleCard));
     margin: 10% 0% 10% 0%;
-    height: calc(var(--hmain)*.033);
 }
 
 .card p {
     font-weight: 400;
-    font-size: calc(var(--hmain)*.0144);
-    height: calc(var(--hmain)*.0146);
+    font-size: calc(var(--pscard));
+    text-align: center;
 }
 
 
@@ -188,7 +211,7 @@ main {
 }
 
 .clients div {
-    margin-bottom: calc(var(--hmain)*.048);
+    margin-bottom: calc(var(--hmain)*.06);
 }
 
 .groupClients{
@@ -203,9 +226,10 @@ main {
 .cardClient {
     height: calc(var(--hmain)*.26);
     width: calc(var(--hmain)*.455);
-    box-shadow: -1px 1px 20px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
     border-radius: calc(var(--hmain)*.04);
     display: flex;
+    transition: 0.25s;
 }
 
 
@@ -225,7 +249,7 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-bottom: calc(var(--hmain)*.048);
+    margin-bottom: calc(var(--hmain)*.06);
 
 }
 
@@ -238,32 +262,35 @@ main {
 }
 
 .cardSocial {
-    width: calc(var(--hmain)*.34);
-    height: calc(var(--hmain)*.41);
-    box-shadow: -1px 1px 20px 5px rgba(0, 0, 0, 0.25);
+    width: calc(var(--hmain)*.36);
+    height: calc(var(--hmain)*.44);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
     border-radius: calc(var(--hmain)*.04);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: 0.25s;
+    padding: 0% calc(var(--hmain)*.03);
 }
 
 .cardSocial img {
-    width: calc(var(--hmain)*.11);
-    height: calc(var(--hmain)*.11);
+    width: calc(var(--hmain)*.12);
+    height: calc(var(--hmain)*.12);
     border-radius: 15%;
 }
 
 .cardSocial h3{
     font-weight: 600;
-    font-size: calc(var(--hmain)*.027);
-    margin-top: calc(var(--hmain)*.05);
-    margin-bottom: calc(var(--hmain)*.045);
+    font-size: calc(var(--titleCard));
+    margin-top: calc(var(--titleCard));
+    margin-bottom: calc(var(--titleCard));
 }
 
 .cardSocial p{
     font-weight: 500;
-    font-size: calc(var(--hmain)*.015);
+    font-size: calc(var(--pscard));
+    text-align: center;
 }
 
 .cardSocial:first-child{
@@ -286,18 +313,16 @@ main {
 
 footer {
     display: flex;
-    height: 45vh;
     background: #C0C1FF;
     margin-top: calc(var(--hmain)*0.23);
-    padding: 0% calc(var(--hmain)*.03);
-    padding-top: calc(var(--hmain)*.032);
+    padding: calc(var(--hmain)*.032) calc(var(--hmain)*.032);
 }
 
 footer .foot{
     display: flex;
     width: 100%;
     height: 100%;
-    align-items: center;
+    align-items: flex-start;
 }
 
 
@@ -309,20 +334,18 @@ footer article {
 .logoFooter{
     display: flex;
     flex-direction: column;
-
 }
 
 .logoFooter img{
-    height: calc(var(--hmain)*.05);
-    width: calc(var(--hmain)*.19);
-    margin-bottom: calc(var(--hmain)*.023);
+    height: calc(var(--pfoo)*3.15);
+    width: calc(var(--pfoo)*12);
 }
 
 .logoFooter p, .rights p {
     
-    font-size: calc(var(--hmain)*.016);
+    font-size: calc(var(--pfoo));
     font-weight: 500;
-    margin-top: calc(var(--hmain)*.008);
+    margin-top: calc(var(--pfoo)*.5);
 }
 
 footer nav {
@@ -334,15 +357,15 @@ footer nav {
 
 footer h4 {
     font-weight: 700;
-    font-size: calc(var(--hmain)*.016);
-    margin-bottom: calc(var(--hmain)*.025);
+    font-size: calc(var(--fooXL));
+    margin-bottom: calc(var(--fooXL));
     color: #000000;
 }
 
 footer li {
-    font-size: calc(var(--hmain)*.016);
+    font-size: calc(var(--fooXL));
     font-weight: 600;
-    margin-bottom: calc(var(--hmain)*.025);
+    margin-bottom: calc(var(--fooXL));
     color: #000000;
 }
 
@@ -362,13 +385,13 @@ footer .icons{
 .icons i{
     display: flex;
     justify-content: flex-end;
-    margin-left: calc(var(--hmain)*.027);
+    margin-left: calc(var(--hmain)*.03);
     align-items: center;
 }
 
 .icons img {
-    height: calc(var(--hmain)*.027);
-    width: calc(var(--hmain)*.027);
+    height: calc(var(--hmain)*.03);
+    width: calc(var(--hmain)*.03);
 }
 
 footer .rights{
@@ -376,8 +399,10 @@ footer .rights{
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    margin-top: calc(var(--hmain)*.027);
+    margin-top: calc(var(--pfoo)*.5);
 }
+
+
 
 
         /* --- Interactive --- */
@@ -435,9 +460,117 @@ footer .rights{
 
 /* --- Medias Queries--- */
 
-/* 1  */
+@media (min-width: 2000px) and (orientation: landscape){
+
+    .articleLeft h2 {
+        font-size: calc(var(--hmain)*.07);
+        line-height: calc(var(--hmain)*.07);
+        padding: calc(var(--hmain)*.035) 0px;
+    }
+    
+    .articleLeft h1{
+        font-size: calc(var(--hmain)*.035);
+        margin-bottom: calc(var(--hmain)*.035);
+    }
+    
+    .button{
+        padding: calc(var(--hmain)*.02) calc(var(--hmain)*.06);
+        font-size: calc(var(--hmain)*.024);
+        border-radius: calc(var(--hmain)*.02);
+    }
+
+    .title h2, .social h2, .clients h2 {
+        font-size: calc(var(--hmain)*.042);
+        padding-bottom: calc(var(--hmain)*.021);
+    }
+    
+    .title p, .social p, .clients p {
+        font-size: calc(var(--hmain)*.024);
+    }
+
+    .card h3 {
+            font-size: calc(var(--hmain)*.035);
+    }
+        
+    .card p {
+        font-size: calc(var(--hmain)*.02);
+    }
+        
+    .cardSocial h3{
+        font-size: calc(var(--hmain)*.035);
+        margin-top: calc(var(--hmain)*.035);
+        margin-bottom: calc(var(--hmain)*.035);
+    }
+    
+    .cardSocial p{
+        font-size: calc(var(--hmain)*.018);
+    }
+
+    .logoFooter img{
+        height: calc(var(--hmain)*.05);
+        width: calc(var(--hmain)*.19);
+    }
+    
+    .logoFooter p, .rights p {
+        
+        font-size: calc(var(--hmain)*.02);
+        margin-top: calc(var(--hmain)*.01);
+    }
+
+    footer h4 {
+        font-size: calc(var(--hmain)*.022);
+        margin-bottom: calc(var(--hmain)*.022);
+    }
+    
+    footer li {
+        font-size: calc(var(--hmain)*.022);
+        margin-bottom: calc(var(--hmain)*.022);
+    }
+
+    footer .rights{
+        margin-top: calc(var(--hmain)*.025);
+    }
+
+}
+
+
+/* 1 L  */
+
+@media (max-width: 1888px) and (orientation: landscape){
+
+    .articleLeft h2 {
+        font-size: calc(var(--tmainL));
+        line-height: calc(var(--tmainL)*1.2);
+        padding: calc(var(--tmainL)*.3) 0px;
+    }
+
+
+
+}
+
+/* 1 M  */
+
+@media (max-width: 1500px) and (orientation: landscape){
+
+    .articleLeft h2 {
+        font-size: calc(var(--tmainM));
+        line-height: calc(var(--tmainM)*1.2);
+        padding: calc(var(--tmainM)*.3) 0px;
+    }
+
+    .button{
+        padding: calc(var(--pbtn)*.6) calc(var(--pbtn)*2);
+        font-size: calc(var(--pbtn));
+        border-radius: calc(var(--pbtn)*.6);
+    }
+
+
+}
+
+/* 2 */
 
 @media (max-width: 1367px) and (orientation: landscape){
+
 
     footer {
         flex-direction: column;
@@ -456,18 +589,18 @@ footer .rights{
     }
 
     footer h4 {
-        font-size: calc(var(--hmain)*.02);
-        margin-bottom: calc(var(--hmain)*.035);
+        font-size: calc(var(--fooM));
+        margin-bottom: calc(var(--fooM));
     }
     
     footer li {
-        font-size: calc(var(--hmain)*.02);
-        margin-bottom: calc(var(--hmain)*.035);
+        font-size: calc(var(--pfoo));
+        margin-bottom: calc(var(--pfoo));
     }
 
 }
 
-/* 2  */
+/* 3  */
 
 @media (max-width: 1023px) and (orientation: landscape){
 
@@ -480,7 +613,7 @@ footer .rights{
     }
 }
 
-/* 3  */
+/* 4  */
 
 @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
 
@@ -493,9 +626,9 @@ footer .rights{
     }
 }
 
-/* 4  */
+/* 5  */
 
-@media (max-width: 1023px) and (orientation: portrait) {
+@media (max-width: 1044px) and (orientation: portrait) {
 
     header {
         margin: 0 calc(var(--hmain)*.03);
@@ -508,38 +641,39 @@ footer .rights{
     .articleLeft {
         width: 100%;
     }
-    
+
+    .articleLeft h2 {
+        text-align: center;
+        font-size: calc(var(--tmainM));
+        line-height: calc(var(--tmainM)*1.2);
+    }
+
+    .articleLeft h1{
+        text-align: center;
+    }
+
+    .articleLeft div {
+        align-items: center;
+        padding-bottom: calc(var(--hmain)*.05);
+    }
 
     .title h2, .clients h2, .social h2{
 
-        font-size: calc(var(--hmain)*.031);
+        font-size: calc(var(--tmainS));
+        text-align: center;
 
     }
     
     .title p, .clients p, .social p{
-        font-size: calc(var(--hmain)*.0175);
+        font-size: calc(var(--pmainS));
+        text-align: center;
 
     }
 
-    .articleLeft h2 {
-        font-size: calc(var(--hmain)*.06);
-    
-    }
-    .articleLeft h1{
-        font-size: calc(var(--hmain)*.03);
-    }
-    
-
-
-    .button{
-        padding: calc(var(--hmain)*.02) calc(var(--hmain)*.08);
-        font-size: calc(var(--hmain)*.025);
-        border-radius: calc(var(--hmain)*.012);
-    }
 
     .card {
-        width: calc(var(--hmain)*.36);
-        height: calc(var(--hmain)*.44);
+        width: calc(var(--hmain)*.38);
+        height: calc(var(--hmain)*.49);
     }
 
     .card img {
@@ -549,15 +683,26 @@ footer .rights{
     
     
     .card h3 {
-        font-size: calc(var(--hmain)*.027);
+        font-size: calc(var(--titleCardS));
     }
 
     .card p {
-        font-size: calc(var(--hmain)*.012);
+        font-size: calc(var(--pscard));
+    }
+
+    .cardSocial {
+        width: calc(var(--hmain)*.34);
+        height: calc(var(--hmain)*.4);
+    }
+
+    .cardSocial h3{
+        font-size: calc(var(--titleCardS));
+        margin-top: calc(var(--titleCardS));
+        margin-bottom: calc(var(--titleCardS));
     }
 
     .cardSocial p{
-        font-size: calc(var(--hmain)*.015);
+        font-size: calc(var(--pscard));
     }
 
     .cardClient {
@@ -566,7 +711,6 @@ footer .rights{
     }
 
     footer {
-        height: 100vh;
         flex-direction: column;
         padding: 0% calc(var(--hmain)*.03);
         align-items: center;
@@ -574,7 +718,7 @@ footer .rights{
 
     footer .foot{
         flex-direction: column;
-        padding-top: calc(var(--hmain)*.014);
+        padding-top: calc(var(--pfoo)*1.5);
     }
 
 
@@ -586,7 +730,6 @@ footer .rights{
         
         justify-content: center;
         align-items: center;
-        height: 15vh;
     
     }
 
@@ -595,7 +738,7 @@ footer .rights{
         align-items: center;
         justify-content: center;
         width: 100%;
-        margin-top: calc(var(--hmain)*.045)
+        margin-top: calc(var(--fooM));
 
     }
 
@@ -604,14 +747,53 @@ footer .rights{
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: 30%;
+        margin: calc(var(--fooM)) 0;
     }
     footer section {
         width: 100%;
-        margin-top: calc(var(--hmain)*.027);
         padding-left: calc(var(--hmain)*.027);
-        height: 15vh;
         padding: 0px calc(var(--hmain)*.014);
+        padding-bottom: calc(var(--fooM));
+    }
+
+    footer h4 {
+        font-size: calc(var(--fooM));
+        margin-bottom: calc(var(--fooM));
+    }
+    
+    footer li {
+        font-size: calc(var(--pfoo));
+        margin-bottom: calc(var(--pfoo));
+    }
+
+
+}
+
+@media (max-width: 600px) and (orientation: portrait){
+
+    .articleLeft h2 {
+        font-size: calc(var(--tmainS));
+        line-height: calc(var(--tmainS)*1.2);
+    }
+
+    .articleLeft h1 {
+        font-size: calc(var(--pmainS));
+    }
+
+    .button{
+        padding: calc(var(--pbtnS)*.6) calc(var(--pbtnS)*2);
+        font-size: calc(var(--pbtnS));
+        border-radius: calc(var(--pbtnS)*.6);
+    }
+
+    .title h2, .clients h2, .social h2{
+
+        font-size: calc(var(--titlesS));
+    }
+
+    .cardSocial {
+        width: calc(var(--hmain)*.36);
+        height: calc(var(--hmain)*.44);
     }
 
 
