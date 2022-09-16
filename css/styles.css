@@ -405,9 +405,6 @@ footer .rights{
     margin-top: calc(var(--pfoo)*.5);
 }
 
-
-
-
         /* --- Interactive --- */
 
         .switch:hover{
@@ -763,6 +760,14 @@ footer .rights{
     .icons img {
         height: calc(var(--hmain)*.055);
         width: calc(var(--hmain)*.055);
+    }
+
+    footer .rights p{
+        align-self: center;
+    }
+
+    footer .icons{
+        justify-content: center;
     }
 
 }
