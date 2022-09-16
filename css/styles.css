@@ -163,10 +163,10 @@ main {
 .gcards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     gap: calc(var(--hmain)*.075);
-    margin-bottom: calc(var(--hmain)*.1);
+    margin-bottom: calc(var(--hmain)*.15);
     padding: 0% 5%;
 }
 
@@ -256,9 +256,9 @@ main {
 .groupSocial {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: calc(var(--hmain)*.05);
+    gap: calc(var(--hmain)*.07);
 }
 
 .cardSocial {
@@ -613,7 +613,7 @@ footer .rights{
     }
 }
 
-/* 4  */
+/* 4 Mobile Landscape */
 
 @media (max-width: 1023px) and (orientation: landscape) and (max-height: 600px){
 
@@ -624,44 +624,25 @@ footer .rights{
     .articleLeft {
         width: 60%;
     }
-}
-
-/* 5  */
-
-@media (max-width: 1044px) and (orientation: portrait) {
-
-    header {
-        margin: 0 calc(var(--hmain)*.03);
-    }
-
-    .hidden {
-        display: none;
-    }
-
-    .articleLeft {
-        width: 100%;
-    }
 
     .articleLeft h2 {
-        text-align: center;
-        font-size: calc(var(--tmainM));
-        line-height: calc(var(--tmainM)*1.2);
+        font-size: calc(var(--tmainS));
+        line-height: calc(var(--tmainS)*1.2);
     }
 
-    .articleLeft h1{
-        text-align: center;
+    .articleLeft h1 {
+        font-size: calc(var(--pmainS));
     }
 
-    .articleLeft div {
-        align-items: center;
-        padding-bottom: calc(var(--hmain)*.05);
+    .button{
+        padding: calc(var(--pbtnS)*.6) calc(var(--pbtnS)*2);
+        font-size: calc(var(--pbtnS));
+        border-radius: calc(var(--pbtnS)*.6);
     }
 
     .title h2, .clients h2, .social h2{
 
-        font-size: calc(var(--tmainS));
-        text-align: center;
-
+        font-size: calc(var(--titlesS));
     }
     
     .title p, .clients p, .social p{
@@ -670,17 +651,15 @@ footer .rights{
 
     }
 
-
     .card {
-        width: calc(var(--hmain)*.38);
-        height: calc(var(--hmain)*.49);
+        width: calc(var(--hmain)*.72);
+        height: calc(var(--hmain)*.93);
     }
 
     .card img {
         height: calc(var(--hmain)*.24);
         width: calc(var(--hmain)*.24);
     }
-    
     
     .card h3 {
         font-size: calc(var(--titleCardS));
@@ -690,9 +669,23 @@ footer .rights{
         font-size: calc(var(--pscard));
     }
 
+    .groupClients{
+        gap: calc(var(--hmain)*.15);
+    }
+    
+    .cardClient {
+        height: calc(var(--hmain)*.39);
+        width: calc(var(--hmain)*.68);
+        border-radius: calc(var(--hmain)*.06);
+    }
+
+    .groupSocial {
+        gap: calc(var(--hmain)*.15);
+    }
+
     .cardSocial {
-        width: calc(var(--hmain)*.34);
-        height: calc(var(--hmain)*.4);
+        width: calc(var(--hmain)*.6);
+        height: calc(var(--hmain)*.75);
     }
 
     .cardSocial h3{
@@ -703,11 +696,6 @@ footer .rights{
 
     .cardSocial p{
         font-size: calc(var(--pscard));
-    }
-
-    .cardClient {
-        height: calc(var(--hmain)*.21);
-        width: calc(var(--hmain)*.37);
     }
 
     footer {
@@ -766,6 +754,142 @@ footer .rights{
         margin-bottom: calc(var(--pfoo));
     }
 
+}
+
+/* 5  */
+
+@media (max-width: 1044px) and (orientation: portrait) {
+
+    header {
+        margin: 0 calc(var(--hmain)*.03);
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .articleLeft {
+        width: 100%;
+    }
+
+    .articleLeft h2 {
+        text-align: center;
+        font-size: calc(var(--tmainM));
+        line-height: calc(var(--tmainM)*1.2);
+    }
+
+    .articleLeft h1{
+        text-align: center;
+    }
+
+    .articleLeft div {
+        align-items: center;
+        padding-bottom: calc(var(--hmain)*.05);
+    }
+
+    .title h2, .clients h2, .social h2{
+
+        font-size: calc(var(--tmainS));
+        text-align: center;
+
+    }
+    
+    .title p, .clients p, .social p{
+        font-size: calc(var(--pmainS));
+        text-align: center;
+
+    }
+    .card {
+        width: calc(var(--hmain)*.38);
+        height: calc(var(--hmain)*.49);
+    }
+
+    .card img {
+        height: calc(var(--hmain)*.24);
+        width: calc(var(--hmain)*.24);
+    }
+    .card h3 {
+        font-size: calc(var(--titleCardS));
+    }
+
+    .card p {
+        font-size: calc(var(--pscard));
+    }
+
+    .cardSocial {
+        width: calc(var(--hmain)*.34);
+        height: calc(var(--hmain)*.4);
+    }
+
+    .cardSocial h3{
+        font-size: calc(var(--titleCardS));
+        margin-top: calc(var(--titleCardS));
+        margin-bottom: calc(var(--titleCardS));
+    }
+
+    .cardSocial p{
+        font-size: calc(var(--pscard));
+    }
+
+    .cardClient {
+        height: calc(var(--hmain)*.21);
+        width: calc(var(--hmain)*.37);
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 0% calc(var(--hmain)*.03);
+        align-items: center;
+    }
+
+    footer .foot{
+        flex-direction: column;
+        padding-top: calc(var(--pfoo)*1.5);
+    }
+
+
+    footer article {
+        width: 100%;
+    }
+
+    .logoFooter{
+        
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer nav {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: calc(var(--fooM));
+
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: calc(var(--fooM)) 0;
+    }
+    footer section {
+        width: 100%;
+        padding-left: calc(var(--hmain)*.027);
+        padding: 0px calc(var(--hmain)*.014);
+        padding-bottom: calc(var(--fooM));
+    }
+
+    footer h4 {
+        font-size: calc(var(--fooM));
+        margin-bottom: calc(var(--fooM));
+    }
+    
+    footer li {
+        font-size: calc(var(--pfoo));
+        margin-bottom: calc(var(--pfoo));
+    }
 
 }
 
@@ -795,6 +919,5 @@ footer .rights{
         width: calc(var(--hmain)*.36);
         height: calc(var(--hmain)*.44);
     }
-
 
 }
