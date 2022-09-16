@@ -258,7 +258,7 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: calc(var(--hmain)*.07);
+    gap: calc(var(--hmain)*.063);
 }
 
 .cardSocial {
@@ -382,10 +382,13 @@ footer .icons{
     justify-content: flex-end;
 }
 
+.icons {
+    gap:calc(var(--hmain)*.03)
+}
+
 .icons i{
     display: flex;
     justify-content: flex-end;
-    margin-left: calc(var(--hmain)*.03);
     align-items: center;
 }
 
@@ -583,11 +586,6 @@ footer .rights{
         justify-content: flex-start;
     }
 
-    .icons i{
-        margin-right: calc(var(--hmain)*.027);
-        margin-left: 0;
-    }
-
     footer h4 {
         font-size: calc(var(--fooM));
         margin-bottom: calc(var(--fooM));
@@ -759,6 +757,14 @@ footer .rights{
         margin-bottom: calc(var(--pfoo));
     }
 
+    .icons{
+        gap: calc(var(--hmain)*.055);
+    }
+    .icons img {
+        height: calc(var(--hmain)*.055);
+        width: calc(var(--hmain)*.055);
+    }
+
 }
 
 /* 5  */
@@ -884,6 +890,13 @@ footer .rights{
         padding-left: calc(var(--hmain)*.027);
         padding: 0px calc(var(--hmain)*.014);
         padding-bottom: calc(var(--fooM));
+    }
+
+    footer .rights{
+        align-items: center;
+    }
+    footer .icons{
+        justify-content: center;
     }
 
     footer h4 {
