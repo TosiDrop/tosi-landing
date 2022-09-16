@@ -263,8 +263,8 @@ main {
 }
 
 .cardSocial {
-    width: calc(var(--hmain)*.36);
-    height: calc(var(--hmain)*.44);
+    width: calc(var(--hmain)*.34);
+    height: calc(var(--hmain)*.42);
     box-shadow: 0px 0px calc(var(--hmain)*.05) rgba(0, 0, 0, 0.25);
     border-radius: calc(var(--hmain)*.04);
     display: flex;
