@@ -368,6 +368,7 @@ footer li {
     font-weight: 600;
     margin-bottom: calc(var(--fooXL));
     color: #000000;
+    transition: 0.15s;
 }
 
 footer section {
@@ -396,6 +397,10 @@ footer .icons{
 .icons img {
     height: calc(var(--hmain)*.03);
     width: calc(var(--hmain)*.03);
+}
+
+footer i{
+    transition: 0.15s;
 }
 
 footer .rights{
