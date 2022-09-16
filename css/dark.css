@@ -53,7 +53,7 @@ body.dark .clients h2 {
 
 body.dark .card {
     background: #141B22;
-    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.25);
+
 }
 
 body.dark .card h3 {
@@ -66,11 +66,11 @@ body.dark .card p {
 
 body.dark .cardClient {
     background: #141B22;
-    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.25);
+
 }
 
 body.dark .cardSocial{
-    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.25);
+    background: #141B22;
 }
 
 body.dark .cardSocial:last-child{
