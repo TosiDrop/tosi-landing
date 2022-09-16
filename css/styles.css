@@ -657,8 +657,8 @@ footer .rights{
     }
 
     .card img {
-        height: calc(var(--hmain)*.24);
-        width: calc(var(--hmain)*.24);
+        height: calc(var(--hmain)*.33);
+        width: calc(var(--hmain)*.33);
     }
     
     .card h3 {
@@ -696,6 +696,11 @@ footer .rights{
 
     .cardSocial p{
         font-size: calc(var(--pscard));
+    }
+
+    .cardSocial img {
+        width: calc(var(--hmain)*.15);
+        height: calc(var(--hmain)*.15);
     }
 
     footer {
