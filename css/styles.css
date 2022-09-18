@@ -847,7 +847,7 @@ footer .rights{
 
     .cardSocial h3{
         font-size: calc(var(--titleCardS));
-        margin: calc(var(--titleCard)*1.5) 0;
+        margin: calc(var(--titleCard)*2) 0;
     }
 
     .cardSocial p{
@@ -952,7 +952,7 @@ footer .rights{
     }
 
     .cardSocial h3{
-        margin: calc(var(--titleCard)) 0;
+        margin: calc(var(--titleCard)*1.3) 0;
     }
 
 }
