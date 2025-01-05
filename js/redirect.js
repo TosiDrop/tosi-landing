@@ -1,5 +1,5 @@
 /* window.onload = function() {
-  window.location.href = "https://app.tosidrop.io/cardano/claim";
+  window.location.href = "https://tosidrop.me/cardano/claim";
 } */
 
-window.location.replace("https://app.tosidrop.io/cardano/claim");
+window.location.replace("https://tosidrop.me/cardano/claim");
